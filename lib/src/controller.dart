@@ -6,7 +6,7 @@ import 'dart:async';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/rendering.dart';
-import 'package:youtube_player_iframe/youtube_player_iframe.dart';
+import 'package:modjs_video_player/modjs_video_player.dart';
 
 import 'enums/player_state.dart';
 import 'enums/playlist_type.dart';
@@ -272,6 +272,21 @@ class YoutubePlayerController {
   ///
   /// Might violates Youtube's TOS. Use at your own risk.
   void hideTopMenu() => invokeJavascript('hideTopMenu()');
+
+  /// Show top menu
+  ///
+  /// Might violates Youtube's TOS. Use at your own risk.
+  void showTopMenu() => invokeJavascript('showTopMenu()');
+
+  /// Hide Youtube Logo
+  ///
+  /// Might violates Youtube's TOS. Use at your own risk.
+  void hideYoutubeLogo() => invokeJavascript('hideYoutubeLogo()');
+
+  /// Hide EndScreen
+  ///
+  /// Might violates Youtube's TOS. Use at your own risk.
+  void hideEndScreen() => invokeJavascript('hideEndScreen()');
 
   /// Hides pause overlay i.e. related videos shown when player is paused.
   ///
