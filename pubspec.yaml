@@ -1,0 +1,20 @@
+name: modjs_video_player
+description: Fork of Youtube Player Iframe using Flutter port of the official YouTube iFrame player API. Supports web & mobile platforms.
+version: 1.0.0
+repository: https://github.com/jsml/modjs_video_player
+homepage: https://github.com/jsml/modjs_video_player
+
+environment:
+  sdk: '>=2.12.0 <3.0.0'
+  flutter: '>=1.16.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  flutter_inappwebview: ^5.3.2
+  url_launcher: ^6.0.17
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
